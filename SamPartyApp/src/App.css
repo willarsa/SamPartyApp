@@ -32,23 +32,40 @@
 .option {
   font-family: 'Crayon-Font', sans-serif;
   font-size:  3em;
-  background-color: #fff1d4;
+  background-image: url('src/assets/textured-paper.png');
+  background-color: #ffaa00;
   padding: 30px;
   margin: 30px 0;
   border-radius: 15px;
   width: 30vh;
-  border: 2px solid;
-  border-color: #616161;
   user-select: none;
-  box-shadow: 5px 5px 5px #888888;
+}
+
+.option-one{
+  clip-path: polygon(
+    0% 0%, 10% 2%, 20% 0%, 30% 3%, 40% 0%, 50% 2%, 60% 0%, 70% 4%, 80% 0%, 90% 3%, 100% 0%,
+    100% 10%, 98% 25%, 100% 40%, 98% 55%, 100% 70%, 98% 85%, 100% 100%,/*RIGHT*/
+    100% 100%, 90% 98%, 80% 100%, 70% 97%, 60% 100%, 50% 98%, 40% 100%, 30% 97%, 20% 100%, 10% 98%, 0% 100%,
+    0% 90%, 2% 75%, 0% 60%, 2% 45%, 0% 30%, 2% 15%, 0% 0% /*LEFT*/
+  );
+}
+
+.option-two{
+  clip-path: polygon(
+    0% 0%, 10% 2%, 22% 0%, 34% 1.8%, 45% 0%, 57% 2.5%, 70% 1%, 82% 2%, 94% 0.5%, 100% 1%,
+    100% 12%, 97% 26%, 100% 44%, 96% 58%, 100% 74%, 97% 88%, 100% 100%,
+    100% 100%, 88% 98.5%, 76% 100%, 64% 98.2%, 52% 100%, 40% 97.5%, 28% 100%, 16% 98.5%, 4% 100%, 0% 99%,
+    0% 88%, 3% 72%, 0% 56%, 3% 42%, 0% 28%, 3% 14%, 0% 0%
+  );
 }
 
 .option:hover{
-  background-color: #f1c675;
+  background-color: #fcd382;
 }
 
 .option:active{
-  background-color: #ffa600;
+  background-color: #ff2121;
+  scale: 1.01;
 }
 
 
