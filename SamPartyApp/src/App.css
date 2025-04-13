@@ -1,11 +1,58 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
+  height: 100%;
 }
 
-.logo {
+.pageContainer{
+  background-image: url(assets/lined.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Crayon-Font';
+  src: url('src/assets/fonts/Crayonara-Regular.ttf') format('truetype');
+}
+
+.title {
+  font-family: 'Crayon-Font', sans-serif;
+  font-size:  3em;
+  user-select: none;
+}
+
+.option {
+  font-family: 'Crayon-Font', sans-serif;
+  font-size:  3em;
+  background-color: #fff1d4;
+  padding: 30px;
+  margin: 30px 0;
+  border-radius: 15px;
+  width: 30vh;
+  border: 2px solid;
+  border-color: #616161;
+  user-select: none;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.option:hover{
+  background-color: #f1c675;
+}
+
+.option:active{
+  background-color: #ffa600;
+}
+
+
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +86,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

@@ -1,35 +1,35 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="pageContainer">
+      <div style={{height: '100vh', display: 'flex', flexDirection: 'column'}}>
+        <div style={{ display: 'grid', gridTemplateRows: '1fr 1fr 1fr', gap: '20px', height: '40vh', alignItems: 'start', marginTop: '0', justifyItems: 'center'}}>
+          <div className="title" style={{ backgroundColor: '', padding: '15px', borderRadius: '15px', width: 'auto'}}><ColorfulText text="Sam's Party Games"/></div>
+          <div className="option">Host Game</div>
+          <div className="option">Join Game</div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
+}
+
+function ColorfulText({text}){
+const colors = ['#ff371b', 'green', '#ffc81b', 'blue']
+
+  return(
+    <h1>
+      {text.split('').map((char, index) => (
+        <span
+          key={index}
+          style={{ color: colors[index % colors.length]}}
+        >
+          {char}
+        </span>
+      ))}
+    </h1>
+  );
 }
 
 export default App
