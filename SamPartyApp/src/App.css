@@ -6,7 +6,7 @@
 }
 
 .pageContainer{
-  background-image: url('./assets/lined.png');
+  background-image: url('/assets/images/lined.png');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: 'Crayon-Font';
-  src: url('./src/assets/fonts/Crayonara-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/Crayonara-Regular.ttf') format('truetype');
 }
 
 .title {
@@ -32,7 +32,7 @@
 .option {
   font-family: 'Crayon-Font', sans-serif;
   font-size:  3em;
-  background-image: url('./src/assets/textured-paper.png');
+  background-image: url('/assets/images/textured-paper.png');
   background-color: #ffaa00;
   padding: 30px;
   margin: 30px 0;
