@@ -7,8 +7,8 @@ function App() {
       <div style={{height: '100vh', display: 'flex', flexDirection: 'column'}}>
         <div style={{ display: 'grid', gridTemplateRows: '1fr 1fr 1fr', gap: '20px', height: '40vh', alignItems: 'start', marginTop: '0', justifyItems: 'center'}}>
           <div className="title" style={{ backgroundColor: '', padding: '15px', borderRadius: '15px', width: 'auto'}}><ColorfulText text="Sam's Party Games"/></div>
-          <div className="option option-one">Host Game</div>
-          <div className="option option-two">Join Game</div>
+          <div><button className="option option-one">Host Game</button></div>
+          <div><button className="option option-two">Join Game</button></div>
         </div>
       </div>
     </div>

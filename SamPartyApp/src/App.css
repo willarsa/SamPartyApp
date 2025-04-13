@@ -67,3 +67,15 @@
   background-color: #ff2121;
   scale: 1.01;
 }
+
+button{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button:focus{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
