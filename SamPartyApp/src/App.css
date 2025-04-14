@@ -41,7 +41,8 @@
   user-select: none;
 }
 
-.option-one{
+.clip-one{
+
   clip-path: polygon(
     0% 0%, 10% 2%, 20% 0%, 30% 3%, 40% 0%, 50% 2%, 60% 0%, 70% 4%, 80% 0%, 90% 3%, 100% 0%,
     100% 10%, 98% 25%, 100% 40%, 98% 55%, 100% 70%, 98% 85%, 100% 100%,/*RIGHT*/
@@ -50,7 +51,7 @@
   );
 }
 
-.option-two{
+.clip-two{
   clip-path: polygon(
     0% 0%, 10% 2%, 22% 0%, 34% 1.8%, 45% 0%, 57% 2.5%, 70% 1%, 82% 2%, 94% 0.5%, 100% 1%,
     100% 12%, 97% 26%, 100% 44%, 96% 58%, 100% 74%, 97% 88%, 100% 100%,
@@ -65,7 +66,6 @@
 
 .option:active{
   background-color: #ff2121;
-  scale: 1.01;
 }
 
 button{
@@ -78,4 +78,30 @@ button:focus{
   border: none;
   outline: none;
   box-shadow: none;
+}
+
+.animated-letter {
+  display: inline-block;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.bounce-button{
+  animation: bounce 8s ease-in-out infinite;
+}
+
+.bounce-button2{
+  animation: bounce 5s ease-in-out infinite;
+  animation-delay: 0.5s, 1s;
+}
+
+@keyframes bounce{
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
